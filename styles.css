@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* styles.css */
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  background-image: url("bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-section {
+  margin 0 auto;
+  margin-top: 10rem;
+  padding: 0 5vw;
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.hero-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 110%;
+  margin: 0;
+  color: var(--secondary-text-color); /* Customize the text color */
+}
+
+.hero-subheading {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 110%;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-text-color); /* Customize the text color */
+}
+
+.hero-line {
+  line-height: 140%;
+  text-align: left;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+/* Additional styling for buttons */
+.btn {
+  /* Customize button styles */
+}
+
+.btn.transparent {
+  /* Customize transparent button styles */
+}
+
+/* Primary text color for headings */
+.hero-heading {
+  color: #285a3d; /* Dark green */
+}
+
+/* Secondary text color for additional content */
+.hero-line {
+  color: #4c9a2a; /* Light green */
+}
+
+/* Button styles */
+.btn {
+  background-color: #522d80; /* Purple */
+  color: #fff; /* White */
+  /* Add other button styles as needed */
+}
+
+.btn.transparent {
+  background-color: transparent;
+  border: 2px solid #522d80; /* Purple border */
+  color: #522d80; /* Purple text */
+  /* Add other transparent button styles as needed */
+}
+
+header {
+  padding: 0.5rem 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+}
+
+.logo {
+  width: 250px;
+}
+
+.hero-action-btn-container {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-action-btn-container a {
+  background-color: #522d80;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (max-width: 940px) {
+  #hero-section {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-heading {
+    font-size: 3rem;
+  }
+  .hero-subheading {
+    font-size: 3rem;
+  }
+  .hero-action-btn-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero-heading {
+    font-size: 2.2rem;
+  }
+  .hero-subheading {
+    font-size: 2.2rem;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+}
