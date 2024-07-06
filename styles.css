@@ -137,6 +137,19 @@ header nav ul li a {
   font-weight: 500;
 }
 
+footer {
+  margin-top: 8rem;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
 @media (max-width: 940px) {
   #hero-section {
     flex-direction: column;
